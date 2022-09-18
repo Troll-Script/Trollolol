@@ -1,0 +1,94 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Trollolol Script", "DarkTheme")
+
+   local Main = Window:NewTab("Main")
+    local MainSection = Main:NewSection("Trolls")
+
+MainSection:NewButton("Infinite Yield", "A Powerful Admin Script", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
+ MainSection:NewToggle("SuperHuman", "Best Fake Marco For Da Hood", function(state)
+        if state then
+            game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 120
+            game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+        else
+            game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+            game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+        end
+    end)
+
+    MainSection:NewButton("Chat Spoofer", "Lets you chat for other people", function()
+        loadstring(game:HttpGet(('https://pastebin.com/raw/djBfk8Li'),true))()
+    end)
+
+MainSection:NewButton("Escape Prison", "This Script Need Prison Life Joined!", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-921.399841, 95.327179, 2139.31445, 0.173857525, 1.93223979e-08, -0.984770834, -4.24303011e-08, 1, 1.21303065e-08, 0.984770834, 3.96751787e-08, 0.173857525)
+end)
+
+MainSection:NewButton("Go To Gym", "This Script Need Da Hood Joined!", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-189.752655, 21.7549973, -410.726807, -0.0571058802, -2.49452725e-08, 0.998368144, 1.21347377e-09, 1, 2.50554564e-08, -0.998368144, 2.64230726e-09, -0.0571058802)
+end)
+
+
+MainSection:NewButton("Ray-x", "This Script Need Da Hood Joined!", function()
+ loadstring(game:HttpGet('https://raw.githubusercontent.com/SpaceYes/Lua/Main/DaHood.Lua'))()
+    end)
+
+
+MainSection:NewButton("Aimbot [Head]", "This Script Need Arsenal Joined!", function()
+ loadstring(game:HttpGet('https://pastebin.com/raw/Y0ANCzhq'))()
+    end)
+
+
+MainSection:NewButton("Owl Hub", "This Script Need Arsenal Joined!", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))()
+    end)
+
+
+
+MainSection:NewButton("Win At End TOS", "This Script Need Tower Of Spell Joined!", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(72.8119812, 285.999969, 43.0643082, -0.802543283, 2.65851909e-08, 0.596593916, 8.85322109e-08, 1, 7.45326716e-08, -0.596593916, 1.12633472e-07, -0.802543283)
+end)
+
+MainSection:NewButton("Go To End TOH", "This Script Is Broken Rn Sometimes It Will Work", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-189.752655, 21.7549973, -410.726807, -0.0571058802, -2.49452725e-08, 0.998368144, 1.21347377e-09, 1, 2.50554564e-08, -0.998368144, 2.64230726e-09, -0.0571058802)
+end)
+
+
+MainSection:NewButton("Get All Gamepass", "This Script Works Sometimes", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/5yPcVRrw"))()
+    end)
+
+
+local Player = Window:NewTab("Player")
+    local PlayerSection = Player:NewSection("Player")
+
+    PlayerSection:NewSlider("WalkSpeed", "SPEED!!", 500, 16, function(s)
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+    end)
+
+    PlayerSection:NewSlider("JumpPower", "JUMP HIGH!!", 350, 50, function(s)
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+    end)
+
+    PlayerSection:NewButton("Reset WS/JP", "Resets to all defaults", function()
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+    end)
+
+PlayerSection:NewButton("Hitbox", "This Script Works For Some Games", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/5WYJnvzs"))()
+    end)
+
+PlayerSection:NewButton("Infinite Jump", "This Script Works For Some Games", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/EPRnKus4"))()
+    end)
+
+
+local Settings = Window:NewTab("Settings")
+    local SettingsSection = Settings:NewSection("Settings")
+
+SettingsSection:NewKeybind("Keybind", "Keybind That Will Hide The Gui Or Bring It Back", Enum.KeyCode.V, function()
+
+end)
